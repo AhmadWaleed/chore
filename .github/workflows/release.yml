@@ -21,4 +21,5 @@ jobs:
         github_token: ${{ secrets.SECRET_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
+        project_path: "./cmd/chore"
         extra_files: LICENSE README.md
