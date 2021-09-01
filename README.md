@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/AhmadWaleed/chore/blob/main/banner.png"/>
+</p>
+
 # Chore
 Chore is a tool for executing common tasks you run on your remote servers. You can easily setup tasks for deployment, commands, and more.
 
