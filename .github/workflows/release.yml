@@ -22,4 +22,4 @@ jobs:
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         project_path: "./cmd/chore"
-        extra_files: LICENSE README.md
+        extra_files: LICENSE.md README.md
