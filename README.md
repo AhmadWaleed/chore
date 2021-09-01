@@ -6,7 +6,7 @@
 Chore is a tool for executing common tasks you run on your remote servers. You can easily setup tasks for deployment, commands, and more.
 
 # Installation
-Download release binaries from [here]().
+Download release binaries from [here](https://github.com/AhmadWaleed/chore/releases).
 
 ## Initialize Example Config
 Below command will generate example taskfile.yaml.
