@@ -25,9 +25,8 @@ func (e Local) Run(task config.Task, callback OnRunCallback) error {
 	}
 
 	script := fmt.Sprintf("%s -se <<EOF\n set -e\n%s\nEOF", bash, strings.Join(task.Commands, "\n"))
-	if err := cmd.Run(script); err == nil {
-		callback(out)
-	}
+	err = cmd.Run(script)
+	callback(out)
 
 	return err
 }

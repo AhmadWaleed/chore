@@ -50,9 +50,8 @@ func (e Parallel) Run(task config.Task, callback OnRunCallback) error {
 				"%s %s '%s' -se <<EOF\n set -e\n%s\nEOF",
 				ssh, srv.Target(), bash, strings.Join(task.Commands, "\n"),
 			)
-			if err := cmd.Run(script); err == nil {
-				callback(out)
-			}
+			err = cmd.Run(script)
+			callback(out)
 
 			return err
 		})
